@@ -1,0 +1,15 @@
+#include <iostream>
+
+int main() {
+  char input;
+  for (int i = 0; i < 5; ++i) {
+    std::cout << "Enter a character (or 'n' to exit): ";
+    std::cin >> input;
+    if (input == 'n') {
+      std::cout << "Loop exited early." << std::endl;
+      break; // Exit the loop if 'n' is entered
+    }
+    std::cout << "You entered: " << input << std::endl;
+  }
+  return 0;
+}
